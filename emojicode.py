@@ -108,5 +108,14 @@ def emoji_encode(input: str) -> str:
         r += chr(int(emojiset))
     return r
 
+def emoji_decode(input: str) -> str:
+    r = ""
+    for c in input:
+        codechar = codebook[(ord(c)-EMOJI_BASE)]
+        r += codechar
+    return r
+        
+
 if __name__ == '__main__':
-    print(emoji_encode(sys.argv[1]))
+    #print(emoji_encode(sys.argv[1]))
+    print(emoji_decode(sys.argv[1]))
