@@ -54,6 +54,7 @@ codebook = [
 'Y',
 'Z',
 '!',
+' ',
 '"',
 '#',
 '$',
@@ -94,11 +95,10 @@ codebook = [
 '{',
 '|',
 '}',
-' '
 ]
 
-#EMOJI_BASE = 0x1F600
-EMOJI_BASE = 0x1F400
+EMOJI_BASE = 0x1F600
+#EMOJI_BASE = 0x1F400
 
 def emoji_encode(input: str) -> str:
     r = ""
